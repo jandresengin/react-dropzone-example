@@ -40,11 +40,10 @@ const handleButton = () => {
   return (
     <div className="App">
       <DropzoneComponent />
-      <h3 className="heading">Uploading</h3>
-      <Button type="button" onClick={ (event) => handleButton(event) }>
-        +1
+      <Button type="button" onClick={ () => handleButton() }>
+        upload file
       </Button>
-      <h2>hi {progresshook} hi</h2>
+      <h2>Uploading file {progresshook} % </h2>
       <Progressbar bgcolor="#99ccff" progress={progresshook}  height={30} />
     </div>
 
